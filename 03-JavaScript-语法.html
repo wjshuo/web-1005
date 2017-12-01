@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript基本语法</title>
+</head>
+<body>
+<!--JavaScript代码-->
+<script type="text/javascript">
+    //语法:语句.函数
+    /*一.数据类型:
+     1.数值型Number
+     2.字符串类型
+     3.对象,
+     4.undefine 未定义类型
+     5.空类型 null
+     java定义变量: 数据类型 数据名称= 数据值
+     JavaScript定义变量: var 数据名称=数据值
+     所有数据类型是小写的.
+     JavaScript是一个弱语法的脚本语言,变量的类型由后面的数据值确定.
+     */
+    /*Number类型*/
+    var a = 10;//语句和语句用分号隔开
+    //typeof(变量名)获得变量的类型.
+    console.log("a= "+a+"a的数据类型"+typeof(a));
+    a=11.5;//重新赋值
+    console.log("a= "+a+"a的数据类型"+typeof(a));
+/2.字符串 /
+    var b="abd";
+    console.log("字符串"+b+"类型是小写string"+typeof(b));
+/* 字符串拼接*/
+    var c="hello+world";
+//    可以是两个字符串拼接
+    var d=b+c;
+    console.log(d);
+    //数值类型拼接字符串类型.类型自动转换
+    var dd=a+b;//number+string11.5+abd
+    console.log(dd);
+//如果加号两边是一个字符串类型,则另一端不是字符串类型的会自动转成字符串拼接
+   // 2.如果加号两边都是number类型,则加号会被当成加法运算.
+    var e=11.5+10+11;
+    console.log(e);
+
+// 3.Boolean类型,两个值true和false
+    var f=true;
+    console.log(f+"-----"+typeof (f));
+
+    var ee=f+"蓝鸥";//boolean+string类型
+    console.log(ee+typeof (ee));//类型是string
+    //4.undefined未定义类型,之定义了变量名称,未给具体指的类型都是undefined.
+    var l;
+    console.log(typeof (l));
+    /*5.null空对象  定义了对象,但无具体值,  类型为object.*/
+    var g=null;
+    console.log(typeof (g));
+    /*变量命名规则
+    * 1.见名知意
+    * 2.区分大小写.
+    * 由数字字母,下划线,美元符组成,且数字不能开头.
+    * 不能用保留字和关键字开头.
+    * */
+
+
+
+
+</script>
+
+</body>
+</html>
